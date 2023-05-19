@@ -12,7 +12,9 @@
 </head>
 <body>
 	<h1>PDF 자료 업로드</h1>
-	<form action="<%=request.getContextPath()%>/addBoardAction.jsp" method="post" enctype="multipart/form-data">
+	<form action="<%=request.getContextPath()%>/addBoardAction.jsp" 
+			method="post" 
+			enctype="multipart/form-data">
 		<table>
 			<!-- 자료 업로드 제목글 -->
 			<tr>
