@@ -1,4 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+	if (session.getAttribute("loginMemberId") == null){
+		response.sendRedirect(request.getContextPath() + "/home.jsp");
+		return;
+	} 
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,8 +34,7 @@
 			
 			<!-- 로그인 사용자 아이디-->
 			<%
-				// String memberId = (String)session.getAttribute("loginMemberId");
-				String memberId = "test";
+				String memberId = (String)session.getAttribute("loginMemberId");	
 			%>
 			<tr>
 				<th>memberId</th>
