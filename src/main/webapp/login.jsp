@@ -18,6 +18,11 @@
 		}
 	%>
 	
+	<!-- 메인메뉴 (가로) -->
+	<div>
+		<jsp:include page="/mainmenu.jsp"></jsp:include>
+	</div>
+	
 	<%
 		if(session.getAttribute("loginMemberId")==null){			
 	%>
